@@ -554,6 +554,36 @@ p {
   gap: 20px;
 }
 
+.portfolio-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 18px 0 28px;
+}
+
+.portfolio-filter {
+  min-height: 46px;
+  padding: 0 18px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  color: var(--muted);
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.portfolio-filter.is-active {
+  background: var(--brand);
+  border-color: var(--brand);
+  color: var(--white);
+}
+
+.portfolio-grid-cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
 .portfolio-item,
 .photo-card {
   overflow: hidden;
@@ -572,6 +602,36 @@ p {
   padding: 22px;
 }
 
+.portfolio-open {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: zoom-in;
+}
+
+.portfolio-open img {
+  transition: transform 0.25s ease;
+}
+
+.portfolio-open:hover img {
+  transform: scale(1.03);
+}
+
+.portfolio-tag {
+  display: inline-flex;
+  margin-bottom: 10px;
+  padding: 7px 12px;
+  border-radius: 999px;
+  background: var(--surface-strong);
+  color: var(--brand-dark);
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
 .placeholder-photo {
   display: grid;
   place-items: center;
@@ -583,6 +643,54 @@ p {
   font-size: 1.35rem;
   letter-spacing: 0.04em;
   text-transform: uppercase;
+}
+
+.portfolio-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  background: rgba(18, 24, 30, 0.88);
+}
+
+.portfolio-lightbox[hidden] {
+  display: none;
+}
+
+.portfolio-lightbox-inner {
+  position: relative;
+  max-width: min(1100px, 100%);
+  width: 100%;
+}
+
+.portfolio-lightbox img {
+  width: 100%;
+  max-height: 78vh;
+  object-fit: contain;
+  border-radius: 24px;
+  background: #0f1419;
+}
+
+.portfolio-lightbox-caption {
+  margin-top: 14px;
+  color: rgba(255, 255, 255, 0.92);
+  text-align: center;
+  font-weight: 700;
+}
+
+.portfolio-lightbox-close {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  width: 48px;
+  height: 48px;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.14);
+  color: var(--white);
+  cursor: pointer;
 }
 
 .cta-box {
@@ -698,6 +806,7 @@ p {
   }
 
   .two-col,
+  .portfolio-grid-cards,
   .portfolio-gallery {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -761,6 +870,7 @@ p {
   }
 
   .two-col,
+  .portfolio-grid-cards,
   .portfolio-gallery,
   .hero-panel-grid {
     grid-template-columns: 1fr;
