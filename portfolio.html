@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Портфолио — Ремонт кровли в Нижневартовске</title>
+  <meta name="description" content="Примеры работ по ремонту кровли, замене покрытия, комплексному ремонту и строительству заборов.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
+  <style>
+    .portfolio-section + .portfolio-section {
+      padding-top: 0;
+    }
+
+    .portfolio-block {
+      margin-top: 8px;
+    }
+
+    .portfolio-category-title {
+      margin-bottom: 10px;
+    }
+
+    .portfolio-category-text {
+      margin: 0 0 24px;
+      color: #475569;
+      max-width: 760px;
+    }
+
+    .portfolio-gallery {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 20px;
+    }
+
+    .portfolio-item {
+      background: #fff;
+      border: 1px solid #e2e8f0;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+    }
+
+    .portfolio-item img {
+      width: 100%;
+      height: 260px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .portfolio-item-content {
+      padding: 18px;
+    }
+
+    .portfolio-item-content h3 {
+      margin: 0 0 10px;
+      font-size: 22px;
+      line-height: 1.2;
+    }
+
+    .portfolio-item-content p {
+      margin: 0;
+      color: #475569;
+      line-height: 1.6;
+    }
+
+    @media (max-width: 768px) {
+      .portfolio-gallery {
+        grid-template-columns: 1fr;
+      }
+
+      .portfolio-item img {
+        height: 220px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="logo">Ремонт кровли</a>
+      <button class="menu-toggle" aria-label="Открыть меню">☰</button>
+      <nav class="site-nav">
+        <a href="index.html">Главная</a>
+        <a href="services.html">Услуги</a>
+        <a href="portfolio.html" class="active">Портфолио</a>
+        <a href="contacts.html">Контакты</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container narrow">
+        <p class="eyebrow">Портфолио</p>
+        <h1>Примеры выполненных работ</h1>
+        <p>Ниже собраны реальные фотографии по ремонту кровли, замене покрытия, комплексным работам и строительству заборов.</p>
+      </div>
+    </section>
+
+    <section class="section portfolio-section">
+      <div class="container">
+        <div class="portfolio-block">
+          <h2 class="portfolio-category-title">Ремонт кровли</h2>
+          <p class="portfolio-category-text">Примеры ремонта крыши, восстановления кровельной конструкции и монтажа отдельных элементов.</p>
+
+          <div class="portfolio-gallery">
+            <article class="portfolio-item">
+              <img src="assets/r-1.jpg" alt="Ремонт кровли частного дома">
+              <div class="portfolio-item-content">
+                <h3>Ремонт кровли частного дома</h3>
+                <p>Восстановление повреждённых участков крыши и приведение кровли в рабочее состояние.</p>
+              </div>
+            </article>
+
+            <article class="portfolio-item">
+              <img src="assets/r-2.jpg" alt="Восстановление конструкции крыши">
+              <div class="portfolio-item-content">
+                <h3>Восстановление конструкции крыши</h3>
+                <p>Подготовка основания и выполнение работ по усилению и ремонту кровельной конструкции.</p>
+              </div>
+            </article>
+
+            <article class="portfolio-item">
+              <img src="assets/r-3.jpg" alt="Укладка кровельного материала">
+              <div class="portfolio-item-content">
+                <h3>Укладка кровельного материала</h3>
+                <p>Монтаж покрытия с соблюдением технологии и аккуратной подгонкой всех элементов.</p>
+              </div>
+            </article>
+
+            <article class="portfolio-item">
+              <img src="assets/r-4.jpg" alt="Стропильная система крыши">
+              <div class="portfolio-item-content">
+                <h3>Стропильная система</h3>
+                <p>Сборка и укрепление деревянной конструкции для дальнейшего устройства кровли.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section portfolio-section">
+      <div class="container">
+        <div class="portfolio-block">
+          <h2 class="portfolio-category-title">Комплексные работы</h2>
+          <p class="portfolio-category-text">Объекты, где выполнялись работы по кровле вместе с ремонтом фасада и общим обновлением дома.</p>
+
+          <div class="portfolio-gallery">
+            <article class="portfolio-item">
+              <img src="assets/kompl-1.jpg" alt="Комплексный ремонт дома и кровли">
+              <div class="portfolio-item-content">
+                <h3>Обновление дома и крыши</h3>
+                <p>Комплексный ремонт с улучшением внешнего вида дома и приведением кровли в порядок.</p>
+              </div>
+            </article>
+
+            <article class="portfolio-item">
+              <img src="assets/kompl-2.jpg" alt="Комплексная отделка кровли">
+              <div class="portfolio-item-content">
+                <h3>Комплексная отделка</h3>
+                <p>Аккуратная работа по кровле и доборным элементам с завершённым внешним результатом.</p>
+              </div>
+            </article>
+
+            <article class="portfolio-item">
+              <img src="assets/kompl-3.jpg" alt="Частный дом после ремонта">
+              <div class="portfolio-item-content">
+                <h3>Дом после ремонта</h3>
+                <p>Пример готового объекта после выполнения комплекса строительных и кровельных работ.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section portfolio-section">
+      <div class="container">
+        <div class="portfolio-block">
+          <h2 class="portfolio-category-title">Замена кровельного покрытия</h2>
+          <p class="portfolio-category-text">Фотографии объектов, где выполнялась полная или частичная замена старого покрытия на новое.</p>
+
+          <div class="portfolio-gallery">
+            <article class="portfolio-item">
+              <img src="assets/zamena-1.jpg" alt="Замена старой кровли">
+              <div class="portfolio-item-content">
+                <h3>Замена старой кровли</h3>
+                <p>Демонтаж изношенного покрытия и подготовка крыши к монтажу нового материала.</p>
+              </div>
+            </article>
+
+            <article class="portfolio-item">
+              <img src="assets/zamena-2.jpg" alt="Новое кровельное покрытие">
+              <div class="portfolio-item-content">
+                <h3>Монтаж нового покрытия</h3>
+                <p>Укладка нового кровельного материала с герметизацией и аккуратной подгонкой узлов.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section portfolio-section">
+      <div class="container">
+        <div class="portfolio-block">
+          <h2 class="portfolio-category-title">Заборы и сопутствующие работы</h2>
+          <p class="portfolio-category-text">Дополнительные работы по частным домам: монтаж ограждений, заборов и благоустройство участка.</p>
+
+          <div class="portfolio-gallery">
+            <article class="portfolio-item">
+              <img src="assets/zabor-1.jpg" alt="Монтаж забора на участке">
+              <div class="portfolio-item-content">
+                <h3>Монтаж забора</h3>
+                <p>Установка ограждения по периметру участка с надёжным креплением и ровной линией монтажа.</p>
+              </div>
+            </article>
+
+            <article class="portfolio-item">
+              <img src="assets/zabor-2.jpg" alt="Забор возле дома">
+              <div class="portfolio-item-content">
+                <h3>Ограждение возле дома</h3>
+                <p>Устройство аккуратного ограждения с подгонкой секций и установкой опор.</p>
+              </div>
+            </article>
+
+            <article class="portfolio-item">
+              <img src="assets/zabor-3.jpg" alt="Установка металлического забора">
+              <div class="portfolio-item-content">
+                <h3>Металлический забор</h3>
+                <p>Монтаж конструкции с подготовкой участка и выравниванием линии установки.</p>
+              </div>
+            </article>
+
+            <article class="portfolio-item">
+              <img src="assets/zabor-4.jpg" alt="Готовый забор на участке">
+              <div class="portfolio-item-content">
+                <h3>Готовое ограждение участка</h3>
+                <p>Пример завершённой работы по установке забора для частного дома.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div><a href="index.html" class="logo">Ремонт кровли</a></div>
+      <div><a href="tel:+79829020802">+7 982 902-08-02</a></div>
+      <div><a href="contacts.html">Заказать осмотр</a></div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
