@@ -693,6 +693,67 @@ p {
   cursor: pointer;
 }
 
+.price-note {
+  padding: 18px 20px;
+  border-radius: 22px;
+  background: var(--surface-strong);
+  border: 1px solid rgba(217, 211, 199, 0.95);
+  color: var(--muted);
+}
+
+.price-groups {
+  display: grid;
+  gap: 22px;
+}
+
+.price-card {
+  padding: 26px;
+}
+
+.price-card h3 {
+  margin-bottom: 14px;
+}
+
+.price-table {
+  display: grid;
+  gap: 10px;
+}
+
+.price-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) auto;
+  gap: 16px;
+  align-items: center;
+  padding: 14px 0;
+  border-top: 1px solid rgba(217, 211, 199, 0.9);
+}
+
+.price-row:first-child {
+  border-top: 0;
+  padding-top: 0;
+}
+
+.price-row:last-child {
+  padding-bottom: 0;
+}
+
+.price-row strong {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.price-value {
+  white-space: nowrap;
+  font-family: "Oswald", sans-serif;
+  font-size: 1.3rem;
+  color: var(--brand-dark);
+}
+
+.price-source {
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
 .cta-box {
   padding: 34px;
   background:
@@ -871,6 +932,7 @@ p {
 
   .two-col,
   .portfolio-grid-cards,
+  .price-row,
   .portfolio-gallery,
   .hero-panel-grid {
     grid-template-columns: 1fr;
